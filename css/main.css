@@ -184,8 +184,13 @@ body {
     .box__left-title{font-size: 1.4rem;}
     .box__left-coal{font-size: 1.1rem;}
     .box__bottle-bottom__title{font-size: 1.5rem;}
-    .box__left-bottle{width: 70vw;height: 300px;}
     .box__right-bottles{grid-gap: 10px;}
-    .box__right-bottle{width: 65px;height: 105px;}
+    .box__right-bottle{width: 75px;height: 120px;}
+}
+@media screen and (max-width: 350px ) {
+    .box__bottle-bottom__title{font-size: 1.5rem;}
+    .box__left-bottle{width: 70vw;height: 300px;}
+    .box__right-bottles{grid-gap: 15px;}
+    .box__right-bottle{width: 65px;height: 120px;}
 }
 /*! Responsive Media Queryes end */
