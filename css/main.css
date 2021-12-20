@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Rubik;
+    src: url("../font/Rubik-Medium.ttf");
+}
+
+body {
+    font-family: "Rubik",sans-serif;
+    background-color: rgb(12, 137, 240);
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+/** Box styles */
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/*? Box left section styles  */
+.box__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    flex: 2;
+}
+
+.box__left-title {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.box__left-coal {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+.box__left-bottle {
+    width: 320px;
+    background: #fff;
+    height: 600px;
+    border-radius: 0 20px 20px 0;
+    border: 6px solid #0064ff;
+    border-bottom-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.box__bottle-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.box__bottle-title {
+    font-size: 2rem;
+    color: #0a6cc2;
+}
+
+.box__bottle-subtitle {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: 100;
+    color: #246ca0
+}
+
+.box__bottle-bottom {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #49A4FF;
+    width: 100%;
+    height: 0;
+ 
+}
+.box__bottle-bottom.visiblity{
+    display: flex;
+}
+
+.box__bottle-bottom__title {
+    font-size: 3rem;
+    text-align: center;
+    color: #034CA9;
+}
+
+/*? Box left section styles end  */
+
+/*? Box right section styles  */
+.box__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    flex: 3;
+}
+
+.box__right-title {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 30px 0;
+}
+
+.box__right-bottles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.box__right-bottle {
+    width: 100px;
+    height: 200px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #0064ff;
+    border-radius: 0 0 30px 30px;
+    color: #2565a9;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.box__right-bottle.bg-blue{
+    background-color: #49A4FF;
+    color: #fff;
+}
+
+/*? Box right section styles end  */
+
+/** Box styles end */
+
+
+/*! Responsive Media Queryes */
+@media screen and (max-width: 1500px ) {
+    .container{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 992px ) {
+    .box__left-bottle{width: 280px;height: 500px;}
+    .box__left-title{font-size: 2.2rem;}
+    .box__right-bottles{grid-gap: 10px;}
+    .box__right-bottle{width: 90px;height: 180px;}
+}
+@media screen and (max-width: 768px ) {
+    .box{flex-direction: column; height: auto;padding: 20px 0;}
+    .box__left-bottle{width: 300px;height: 400px;}
+    .box__left-title{font-size: 2.2rem;}
+    .box__right-bottles{grid-gap: 20px;}
+    .box__right-bottle{width: 80px;height: 150px;}
+    .box__bottle-bottom__title{font-size: 2rem;}
+}
+@media screen and (max-width: 576px ) {
+    .box__left-bottle{width: 270px;height: 350px;}
+    .box__left-title{font-size: 1.5rem;}
+    .box__left-coal{font-size: 1.3rem;margin: 15px 0;}
+    .box__right-bottle{width: 75px;height: 120px;}
+}
+@media screen and (max-width: 450px ) {
+    .box__left-bottle{width: 270px;height: 320px;}
+    .box__right-bottle{width: 75px;height: 115px;}
+}
+@media screen and (max-width: 350px ) {
+    .box__left-bottle{width: 70vw;height: 300px;}
+    .box__right-bottles{grid-gap: 10px;}
+    .box__right-bottle{width: 65px;height: 105px;}
+}
+/*! Responsive Media Queryes end */
