@@ -180,7 +180,7 @@ body {
     .box__left-bottle{width: 270px;height: 320px;}
     .box__right-bottle{width: 75px;height: 115px;}
 }
-@media screen and (max-width: 350px ) {
+@media screen and (max-width: 400px ) {
     .box__left-bottle{width: 70vw;height: 300px;}
     .box__right-bottles{grid-gap: 10px;}
     .box__right-bottle{width: 65px;height: 105px;}
